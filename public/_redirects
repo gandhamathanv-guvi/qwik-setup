@@ -1,5 +1,3 @@
 # https://developers.cloudflare.com/pages/platform/redirects/
 
-/demo /demo/flower 301
-
-/demo https://development.placement-prep.pages.dev/
+/sitemap-temp.xml /sitemap.xml 301

@@ -10,6 +10,13 @@ export default extendConfig(baseConfig, () => {
         input: ["src/entry.cloudflare-pages.tsx", "@qwik-city-plan"],
       },
     },
-    plugins: [cloudflarePagesAdapter()],
+    plugins: [cloudflarePagesAdapter({
+      ssg: {
+        include: [],
+        exclude: ['/*'],
+        origin: 'https://www.placementpreparation.io',
+        sitemapOutFile: 'sitemap-temp.xml',
+      },
+    })],
   };
 });
